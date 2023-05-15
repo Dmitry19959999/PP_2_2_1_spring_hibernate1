@@ -23,7 +23,7 @@ public class MainApp {
       userService.addUser(new User("Sidor", "Sidorov", "Sidorov@mail.ru", car2));
       userService.addUser(new User("Mihail", "Mihaiov", "Mihailov@mail.ru", car3));
 
-      List<User> users = userService.listUsers();
+      List<User> users = userService.getlistUsers();
 
       List<User> cars = userService.getUser("BMW", 5);
       for (User user : cars) {
